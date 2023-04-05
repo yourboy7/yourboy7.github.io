@@ -184,7 +184,7 @@ window.addEventListener("beforeunload",leaveChannel);
 document.getElementById('camera-btn').addEventListener('click',toggleCamera);
 document.getElementById('mic-btn').addEventListener('click',toggleMic);
 
-let initToken= async(uid) => commonAjaxGet(false,"https://yourboy7.fun:4567/rtmToken?account="+uid,{},(response)=>token=response.key,(error)=>console.error("Error", error))
+let initToken= async(uid) => commonAjaxGet(false,"https://39.98.177.19:4567/rtmToken?account="+uid,{},(response)=>token=response.key,(error)=>console.error("Error", error))
 
 /**
  * 封装公共ajax,get的传输方式，必传参数
